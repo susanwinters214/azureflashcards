@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Cloud</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0080ff;
+          }
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          background-color: lightblue;
+          padding: 0px;
+        }
+        .grid-item {
+          background-color: rgba(255, 255, 255, 0.8);
+          border: 1px solid rgba(0, 0, 0, 0.8);
+          padding: 0px;
+          font-size: 14px;
+          text-align: center;
+        }
+        .flip-card {
+            background-color: transparent;
+            width: 100%;
+            height: 150px;
+            perspective: 1000px;
+          }
+          
+          .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height:  150px;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          }
+          
+          .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+          }
+          
+          .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height:  150px;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+          }
+          
+          .flip-card-front {
+            background-color: #bbb;
+            color: black;
+          }
+          
+          .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+          }
+          h3{padding-top:20px;padding-left:15px;padding-right:15px;}
+          p{padding-top:2px;text-align:left;padding-left:5px;}
+         
+        </style>
+</head>
+<body>
+<h1>Azure Fundamentals Flashcards</h1>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                 <h3>Define Cloud Computing</h3>
+                  </div>
+                  <div class="flip-card-back">
+               
+                    <p>The on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user.  </p>
+                  </div>
+                </div>
+              </div>
+              
+
+        </div>
+        <div class="grid-item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h3>Name 3 cloud deployment services</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Public - uses cloud provider's data centers<br />
+                    <p>Private - uses their own data centers </p>     
+                    <p>Hybrid - 50/50 of the above</p>
+                
+
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+        <div class="grid-item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                 <h3>How is High Availability achieved?</h3>
+                  </div>
+                  <div class="flip-card-back">
+                  <p>Data and code stored in the cloud are automatically copied to multiple data centers around the world.</p>
+                  </div>
+                </div>
+              </div>              
+        </div>  
+        <div class="grid-item">
+            <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+            <h3>What does Scalability mean?</h3>
+              </div>
+              <div class="flip-card-back">
+             <p> The application running in the cloud can expand its size when there are more users in the system. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h3>What are the 3 cloud service models?</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>SaaS - Software as a service</p>
+                    <p>IaaS - Infrastructure as a service</p> 
+                    <p>PasS - Platform as a service </p>
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+        <div class="grid-item">
+            <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+               <h3>What are the 5 Core Cloud services in Azure?</h3>
+              </div>
+              <div class="flip-card-back">
+                <p>Compute<br /> 
+               Storage <br /> 
+                Networking <br /> 
+                Application Services<br /> 
+               Analytics  </p>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="grid-item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h3>Name 4 Storage Services</h3>
+                    
+                  </div>
+                  <div class="flip-card-back">
+               <p>Blog - unstructured data</p> 
+               <p>Disk - used for VMs</p> 
+               <p>File - file shares</p> 
+               <p>Tiers - noSQL databases</p> 
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+        <div class="grid-item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h3>Name 4 Redundancy Options</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Locally-redudant storage</p> 
+                    <p>Geo-redundant storage</p>
+                    <p>Zone-redudant storate</p> 
+                    <p>Geo-zone-redundant storage</p>
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+        <div class="grid-item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                   <h3>Name 3 Options for Moving Files in & out of Azure</h3>
+                    
+                  </div>
+                  <div class="flip-card-back">
+                    <p>AzCopy</p> 
+                    <p>Azure Storage Explorer</p> 
+                    <p>Azure File Sync</p>
+                  </div>
+                </div>
+              </div>
+              
+        </div>  
+      </div>
+
+
+</body>
+</html>
